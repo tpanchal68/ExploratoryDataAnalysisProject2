@@ -14,7 +14,7 @@ if(!exists("SCC")){
         SCC <- readRDS("Data/Source_Classification_Code.rds")
 }
 
-## In order to find COAL related emission, it would be easier if we merge both tables
+## In order to find moter vehicle related emission, it would be easier if we merge both tables
 ## and work with combined table.  merge both tables with comon column which is SCC
 if(!exists("combo_table")){
         combo_table <- merge(NEI, SCC, by="SCC")
